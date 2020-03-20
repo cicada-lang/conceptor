@@ -1,15 +1,22 @@
 #!/usr/bin/env bash
 
-function t {
-    test_prog_ext node js && \
-        test_prog_ext bash sh
+function install {
+    yarn install
 }
 
-function test_prog_ext {
+function build {
+    yarn run build
+}
+
+function t {
+    test_lib node js
+}
+
+function test_lib {
     prog=$1
     ext=$2
 
-    for file in $(find . | grep "^\./lib/" | grep "\.test.*$" | grep "\.${ext}$")
+    for file in $(find . | grep -v "deps/" | grep -v "node_modules/" | grep "./*/lib/" | grep "\.test.*$" | grep "\.${ext}$")
     do
         echo ""
         echo "[test] $file"

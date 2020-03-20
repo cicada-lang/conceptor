@@ -2,6 +2,10 @@
   "name": "@cicadoidea/concept",
   "files": [ "lib" ],
   "version": "0.0.1",
+  "scripts": {
+    "build": "npx tsc",
+    "watch": "npx tsc --watch --preserveWatchOutput --listEmittedFiles"
+  },
   "license": "GPL-3.0-or-later",
   "author": "Xie Yuheng",
   "repository": {
