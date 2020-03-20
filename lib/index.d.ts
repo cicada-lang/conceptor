@@ -1,7 +1,7 @@
 declare class context_t {
     objects: Array<string>;
     attributes: Array<string>;
-    relation: Set<string>;
+    incidence: Set<string>;
     constructor();
 }
 declare type entry_t = {
