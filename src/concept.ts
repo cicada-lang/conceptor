@@ -29,10 +29,14 @@ export function objs_match_attrs_p(
     util.equal(op.derive_objs(ctx, attrs), objs)
 }
 
-// TODO
-// export function subconcept_p(): boolean {}
-// greatest_common_subconcept
-// superconcept_p
-// least_common_superconcept
+export function subconcept_p(x: Concept, y: Concept): boolean {
+  return util.include(y.objs, x.objs)
+}
 
-// An implication A → B relates two sets A and B of attributes and expresses that every object possessing each attribute from A also has each attribute from B.
+export function superconcept_p(x: Concept, y: Concept): boolean {
+  return subconcept_p(y, x)
+}
+
+// TODO
+// greatest_common_subconcept
+// least_common_superconcept
