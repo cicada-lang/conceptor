@@ -1,11 +1,15 @@
-declare class context_t {
+export declare class Context {
     objects: Array<string>;
     attributes: Array<string>;
     incidence: Set<string>;
     constructor();
 }
-declare type entry_t = {
+export declare type Entry = {
     [key: string]: string;
 };
-declare function context_from_table(table: Array<entry_t>): context_t;
-declare function concept_p(ctx: context_t, extent: Set<string>, intent: Set<string>): boolean;
+export declare function context_from_table(table: Array<Entry>): Context;
+export declare function derive_extent(context: Context, intent: Set<string>): Set<string>;
+export declare function derive_intent(context: Context, intent: Set<string>): Set<string>;
+export declare function extent_closure(context: Context, extent: Set<string>): Set<string>;
+export declare function intent_closure(context: Context, intent: Set<string>): Set<string>;
+export declare function formal_concept_p(context: Context, extent: Set<string>, intent: Set<string>): boolean;
