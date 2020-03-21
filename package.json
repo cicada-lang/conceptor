@@ -1,6 +1,9 @@
 {
   "name": "@cicadoidea/concept",
-  "files": [ "lib" ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib/main.js",
   "version": "0.0.1",
   "scripts": {
     "build": "npx tsc",
@@ -11,5 +14,13 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/cicadoidea/concept"
+  },
+  "devDependencies": {
+    "@types/assert": "^1.4.6",
+    "@types/node": "^13.9.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "fast-deep-equal": "^3.1.1"
   }
 }
