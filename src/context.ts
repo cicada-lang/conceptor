@@ -19,7 +19,3 @@ export function context_from_table(table: { [key: string]: Array<string> }): Con
   }
   return ctx
 }
-
-export function obj_has_attr_p(ctx: Context, obj: string, attr: string): boolean {
-  return ctx.incidence.has(`(${obj} has ${attr})`)
-}

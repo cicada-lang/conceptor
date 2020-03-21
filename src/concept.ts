@@ -23,8 +23,8 @@ export function objs_match_attrs_p(
   objs: Set<string>,
   attrs: Set<string>,
 ): boolean {
-  return util.include_p(ctx.objs, objs) &&
-    util.include_p(ctx.attrs, attrs) &&
+  return util.include(ctx.objs, objs) &&
+    util.include(ctx.attrs, attrs) &&
     util.equal(op.derive_attrs(ctx, objs), attrs) &&
     util.equal(op.derive_objs(ctx, attrs), objs)
 }
@@ -34,3 +34,5 @@ export function objs_match_attrs_p(
 // greatest_common_subconcept
 // superconcept_p
 // least_common_superconcept
+
+// An implication A → B relates two sets A and B of attributes and expresses that every object possessing each attribute from A also has each attribute from B.

@@ -17,7 +17,7 @@ export function exists<A>(s: Set<A>, p: (x: A) => boolean): boolean {
   return false
 }
 
-export function include_p<A>(big_set: Set<A>, small_set: Set<A>): boolean {
+export function include<A>(big_set: Set<A>, small_set: Set<A>): boolean {
   return forall(small_set, (x) => big_set.has(x))
 }
 

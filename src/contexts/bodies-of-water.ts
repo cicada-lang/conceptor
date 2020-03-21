@@ -1,5 +1,11 @@
 import * as Context from "../context"
 
+// NOTE
+// - A body of water or waterbody (often spelled water body)
+//   is any significant accumulation of water,
+//   generally on a planet's surface.
+// - <https://en.wikipedia.org/wiki/Body_of_water>
+
 export const bodies_of_water = Context.context_from_table({
   "canal": ["running", "constant"],
   "channel": ["running", "constant"],
