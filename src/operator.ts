@@ -28,10 +28,3 @@ export function closure_objs(ctx: Context.Context, objs: Set<string>): Set<strin
 export function closure_attrs(ctx: Context.Context, attrs: Set<string>): Set<string> {
   return derive_attrs(ctx, derive_objs(ctx, attrs))
 }
-
-export function formal_concept_p(ctx: Context.Context, objs: Set<string>, attrs: Set<string>): boolean {
-  return util.include_p(ctx.objs, objs) &&
-    util.include_p(ctx.attrs, attrs) &&
-    util.equal(derive_attrs(ctx, objs), attrs) &&
-    util.equal(derive_objs(ctx, attrs), objs)
-}
