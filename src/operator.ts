@@ -30,8 +30,8 @@ export function closure_attrs(ctx: Context.Context, attrs: Set<string>): Set<str
 }
 
 export function formal_concept_p(ctx: Context.Context, objs: Set<string>, attrs: Set<string>): boolean {
-  return util.include(ctx.objs, objs) &&
-    util.include(ctx.attrs, attrs) &&
+  return util.include_p(ctx.objs, objs) &&
+    util.include_p(ctx.attrs, attrs) &&
     util.equal(derive_attrs(ctx, objs), attrs) &&
     util.equal(derive_objs(ctx, attrs), objs)
 }
