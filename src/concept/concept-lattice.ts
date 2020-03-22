@@ -1,3 +1,4 @@
+import * as Concept from "./concept"
 import * as Context from "../context/context"
 import * as Lattice from "../lattice/lattice"
 

@@ -6,11 +6,9 @@ export function attrs_extent(
   attrs: Set<string>,
 ): Set<string> {
   let objs: Set<string> = new Set()
-  for (let obj of ctx.objs) {
-    if (util.forall(attrs, (attr) => Context.has(ctx, obj, attr))) {
+  for (let obj of ctx.objs)
+    if (util.forall(attrs, (attr) => Context.has(ctx, obj, attr)))
       objs.add(obj)
-    }
-  }
   return objs
 }
 
@@ -19,11 +17,9 @@ export function objs_intent(
   objs: Set<string>,
 ): Set<string> {
   let attrs: Set<string> = new Set()
-  for (let attr of ctx.attrs) {
-    if (util.forall(objs, (obj) => Context.has(ctx, obj, attr))) {
+  for (let attr of ctx.attrs)
+    if (util.forall(objs, (obj) => Context.has(ctx, obj, attr)))
       attrs.add(attr)
-    }
-  }
   return attrs
 }
 

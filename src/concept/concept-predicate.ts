@@ -5,10 +5,8 @@ export function subconcept_p(
   x: Concept.Concept,
   y: Concept.Concept,
 ): boolean {
-  if (x.ctx !== y.ctx) {
+  if (x.ctx !== y.ctx)
     throw new Error("CONTEXT_MISMATCH")
-  }
-
   return util.include(y.objs, x.objs)
 }
 
