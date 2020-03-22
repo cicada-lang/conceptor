@@ -1,2 +1,2 @@
-export * as Context from "./context";
-export * as op from "./operator";
+export * as Context from "./context/context";
+export * as Concept from "./concept/concept";

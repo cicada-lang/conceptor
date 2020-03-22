@@ -1,4 +1,4 @@
-import * as Context from "../context"
+import * as Context from "../context/context"
 
 // NOTE
 // - A body of water or waterbody (often spelled water body)

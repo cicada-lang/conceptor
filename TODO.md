@@ -1,1 +1,9 @@
+- refactor `concept.ts`
+  - concept-operator.ts
+  - concept-builder.ts
+  - concept-predicate.ts
+- try `obj attr value time` database
+- as `concept_lattice` as `CompleteLattice`
+- representation of finite lattice
 - generate lattice
+- theory of readable Hasse diagram

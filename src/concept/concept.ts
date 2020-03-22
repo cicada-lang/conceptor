@@ -1,6 +1,6 @@
-import * as util from "./util"
-import * as Context from "./context"
-import * as op from "./operator"
+import * as util from "../util"
+import * as Context from "../context/context"
+import * as Lattice from "../lattice/lattice"
 
 export class Concept {
   constructor(
@@ -25,11 +25,15 @@ export function objs_match_attrs_p(
 ): boolean {
   return util.include(ctx.objs, objs) &&
     util.include(ctx.attrs, attrs) &&
-    util.equal(op.objs_intent(ctx, objs), attrs) &&
-    util.equal(op.attrs_extent(ctx, attrs), objs)
+    util.equal(Context.objs_intent(ctx, objs), attrs) &&
+    util.equal(Context.attrs_extent(ctx, attrs), objs)
 }
 
 export function subconcept_p(x: Concept, y: Concept): boolean {
+  if (x.ctx !== y.ctx) {
+    throw new Error("CONTEXT_MISMATCH")
+  }
+
   return util.include(y.objs, x.objs)
 }
 
@@ -37,6 +41,13 @@ export function superconcept_p(x: Concept, y: Concept): boolean {
   return subconcept_p(y, x)
 }
 
-// TODO
-// greatest_common_subconcept
-// least_common_superconcept
+export function greatest_common_subconcept(xs: Array<Concept>): Concept {
+  throw new Error("TODO")
+}
+
+export function least_common_superconcept(xs: Array<Concept>): Concept {
+  throw new Error("TODO")
+}
+
+// const concept_lattice: Lattice.CompleteLattice<Concept> =
+//   new Lattice.CompleteLattice(pre, sup, inf)

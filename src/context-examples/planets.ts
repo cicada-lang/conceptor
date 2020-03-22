@@ -1,4 +1,4 @@
-import * as Context from "../context"
+import * as Context from "../context/context"
 
 export const planets = Context.context_from_table({
   "mercury": ["size.small", "distance-from-sun.near", "moon.no"],
