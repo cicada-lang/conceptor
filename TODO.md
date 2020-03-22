@@ -1,4 +1,3 @@
-- concept-operator.ts
 - concept-lattice.ts
 - try `obj attr value time` database
 - `concept_lattice` as `CompleteLattice`

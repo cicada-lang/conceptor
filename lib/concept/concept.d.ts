@@ -1,9 +1,8 @@
-import * as Context from "../context/context";
+import * as Ctx from "../ctx/ctx";
 export declare class Concept {
-    ctx: Context.Context;
     objs: Set<string>;
     attrs: Set<string>;
-    constructor(ctx: Context.Context, objs: Set<string>, attrs: Set<string>);
+    constructor(ctx: Ctx.Ctx, objs: Set<string>, attrs: Set<string>);
 }
 export * from "./concept-builder";
 export * from "./concept-operator";

@@ -1,5 +1,5 @@
 import * as Concept from "./concept"
-import * as Context from "../context/context"
+import * as Ctx from "../ctx/ctx"
 import * as Lattice from "../lattice/lattice"
 
 // const concept_lattice: Lattice.CompleteLattice<Concept.Concept> =

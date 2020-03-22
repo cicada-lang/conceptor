@@ -1,3 +1,4 @@
 import * as Concept from "./concept";
-export declare function greatest_common_subconcept(xs: Array<Concept.Concept>): Concept.Concept;
-export declare function least_common_superconcept(xs: Array<Concept.Concept>): Concept.Concept;
+import * as Ctx from "../ctx/ctx";
+export declare function sup(ctx: Ctx.Ctx, xs: Array<Concept.Concept>): Concept.Concept;
+export declare function inf(ctx: Ctx.Ctx, xs: Array<Concept.Concept>): Concept.Concept;

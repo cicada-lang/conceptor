@@ -1,5 +1,5 @@
-import * as Context from "./context";
-export declare function context_from_table(table: {
+import * as Ctx from "./ctx";
+export declare function ctx_from_table(table: {
     [key: string]: Array<string>;
-}): Context.Context;
+}): Ctx.Ctx;
 export declare function repr_incidence_has(obj: string, attr: string): string;

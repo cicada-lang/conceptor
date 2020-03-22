@@ -1,4 +1,4 @@
 import * as Concept from "./concept";
-import * as Context from "../context/context";
-export declare function top_concept(ctx: Context.Context): Concept.Concept;
-export declare function bottom_concept(ctx: Context.Context): Concept.Concept;
+import * as Ctx from "../ctx/ctx";
+export declare function top(ctx: Ctx.Ctx): Concept.Concept;
+export declare function bottom(ctx: Ctx.Ctx): Concept.Concept;

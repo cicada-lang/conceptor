@@ -1,7 +1,7 @@
-import * as Context from "./context"
+import * as Ctx from "./ctx"
 
-export function context_from_table(table: { [key: string]: Array<string> }): Context.Context {
-  let ctx = new Context.Context()
+export function ctx_from_table(table: { [key: string]: Array<string> }): Ctx.Ctx {
+  let ctx = new Ctx.Ctx()
   for (let [obj, attrs] of Object.entries(table)) {
     ctx.objs.add(obj)
     for (let attr of attrs) {

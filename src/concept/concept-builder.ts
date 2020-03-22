@@ -1,18 +1,18 @@
 import * as Concept from "./concept"
-import * as Context from "../context/context"
+import * as Ctx from "../ctx/ctx"
 
-export function top_concept(
-  ctx: Context.Context
+export function top(
+  ctx: Ctx.Ctx
 ): Concept.Concept {
-  let objs = Context.objs_closure(ctx, ctx.objs)
-  let attrs = Context.objs_intent(ctx, ctx.objs)
+  let objs = Ctx.objs_closure(ctx, ctx.objs)
+  let attrs = Ctx.objs_intent(ctx, ctx.objs)
   return new Concept.Concept(ctx, objs, attrs)
 }
 
-export function bottom_concept(
-  ctx: Context.Context
+export function bottom(
+  ctx: Ctx.Ctx
 ): Concept.Concept {
-  let objs = Context.attrs_extent(ctx, ctx.attrs)
-  let attrs = Context.attrs_closure(ctx, ctx.attrs)
+  let objs = Ctx.attrs_extent(ctx, ctx.attrs)
+  let attrs = Ctx.attrs_closure(ctx, ctx.attrs)
   return new Concept.Concept(ctx, objs, attrs)
 }

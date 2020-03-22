@@ -1,6 +1,6 @@
-import * as Context from "../context/context"
+import * as Ctx from "../ctx/ctx"
 
-export const planets = Context.context_from_table({
+export const planets = Ctx.ctx_from_table({
   "mercury": ["size.small", "distance-from-sun.near", "moon.no"],
   "venus": ["size.small", "distance-from-sun.near", "moon.no"],
   "earth": ["size.small", "distance-from-sun.near", "moon.yes"],
