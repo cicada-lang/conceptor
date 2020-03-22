@@ -9,7 +9,7 @@ export function has(
   return ctx.incidence.has(`(${obj} has ${attr})`)
 }
 
-export function derive_objs(
+export function attrs_extent(
   ctx: Context.Context,
   attrs: Set<string>,
 ): Set<string> {
@@ -22,7 +22,7 @@ export function derive_objs(
   return objs
 }
 
-export function derive_attrs(
+export function objs_intent(
   ctx: Context.Context,
   objs: Set<string>,
 ): Set<string> {
@@ -35,18 +35,18 @@ export function derive_attrs(
   return attrs
 }
 
-export function closure_objs(
+export function objs_closure(
   ctx: Context.Context,
   objs: Set<string>,
 ): Set<string> {
-  return derive_objs(ctx, derive_attrs(ctx, objs))
+  return attrs_extent(ctx, objs_intent(ctx, objs))
 }
 
-export function closure_attrs(
+export function attrs_closure(
   ctx: Context.Context,
   attrs: Set<string>,
 ): Set<string> {
-  return derive_attrs(ctx, derive_objs(ctx, attrs))
+  return objs_intent(ctx, attrs_extent(ctx, attrs))
 }
 
 export function imply(
@@ -55,6 +55,6 @@ export function imply(
   concluding_attrs: Set<string>,
 ): boolean {
   return util.include(
-    derive_objs(ctx, concluding_attrs),
-    derive_objs(ctx, given_attrs))
+    attrs_extent(ctx, concluding_attrs),
+    attrs_extent(ctx, given_attrs))
 }

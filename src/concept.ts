@@ -25,8 +25,8 @@ export function objs_match_attrs_p(
 ): boolean {
   return util.include(ctx.objs, objs) &&
     util.include(ctx.attrs, attrs) &&
-    util.equal(op.derive_attrs(ctx, objs), attrs) &&
-    util.equal(op.derive_objs(ctx, attrs), objs)
+    util.equal(op.objs_intent(ctx, objs), attrs) &&
+    util.equal(op.attrs_extent(ctx, attrs), objs)
 }
 
 export function subconcept_p(x: Concept, y: Concept): boolean {
