@@ -1,5 +1,5 @@
 {
-  "name": "@cicadoidea/concept",
+  "name": "@cicadoidea/formal-concept",
   "files": [
     "lib"
   ],
@@ -13,7 +13,7 @@
   "author": "Xie Yuheng",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cicadoidea/concept"
+    "url": "https://github.com/cicadoidea/formal-concept"
   },
   "devDependencies": {
     "@types/assert": "^1.4.6",

@@ -1,3 +1,3 @@
 export * from "./index"
-import * as cp from "./index"
-export default cp
+import * as fc from "./index"
+export default fc

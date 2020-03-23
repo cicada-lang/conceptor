@@ -1,8 +1,8 @@
-# Concept
+# Formal Concept
 
 Formal concept analysis.
 
-- `npm install @cicadoidea/concept`
+- `npm install @cicadoidea/formal-concept`
 
 ## Community
 
