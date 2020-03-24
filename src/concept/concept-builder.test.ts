@@ -1,6 +1,6 @@
 import * as Concept from "./concept"
-import { bodies_of_water } from "../ctx_examples/bodies_of_water"
-import { planets } from "../ctx_examples/planets"
+import { bodies_of_water } from "../ctx-examples/bodies-of-water"
+import { planets } from "../ctx-examples/planets"
 
 console.log(
   "top of bodies_of_water:",

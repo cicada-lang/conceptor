@@ -4,6 +4,6 @@ export class Ctx {
   incidence: Set<string> = new Set()
 }
 
-export * from "./ctx_builder"
-export * from "./ctx_operator"
-export * from "./ctx_predicate"
+export * from "./ctx-builder"
+export * from "./ctx-operator"
+export * from "./ctx-predicate"
