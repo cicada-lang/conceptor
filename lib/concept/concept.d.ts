@@ -4,7 +4,7 @@ export declare class Concept {
     attrs: Set<string>;
     constructor(ctx: Ctx.Ctx, objs: Set<string>, attrs: Set<string>);
 }
-export * from "./concept-builder";
-export * from "./concept-operator";
-export * from "./concept-predicate";
-export * from "./concept-pretty";
+export * from "./concept_builder";
+export * from "./concept_operator";
+export * from "./concept_predicate";
+export * from "./concept_pretty";

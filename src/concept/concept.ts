@@ -17,7 +17,7 @@ export class Concept {
   }
 }
 
-export * from "./concept-builder"
-export * from "./concept-operator"
-export * from "./concept-predicate"
-export * from "./concept-pretty"
+export * from "./concept_builder"
+export * from "./concept_operator"
+export * from "./concept_predicate"
+export * from "./concept_pretty"
