@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 function install {
-    yarn install
+    npm install
 }
 
 function build {
-    yarn run build
+    npm run build
 }
 
 function t {

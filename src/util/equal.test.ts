@@ -1,5 +1,5 @@
 import assert from "assert"
-import * as util from "./util"
+import * as util from "./index"
 
 {
   let x = [1, 2, new Set([1, 2, [1, 2, 3]])]

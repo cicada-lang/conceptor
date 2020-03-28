@@ -3,6 +3,6 @@ export declare class Ctx {
     attrs: Set<string>;
     incidence: Set<string>;
 }
-export * from "./ctx-builder";
-export * from "./ctx-operator";
+export * from "./ctx-build";
+export * from "./ctx-function";
 export * from "./ctx-predicate";

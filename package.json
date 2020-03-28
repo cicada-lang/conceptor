@@ -7,7 +7,7 @@
   "version": "0.0.1",
   "scripts": {
     "build": "npx tsc",
-    "watch": "npx tsc --watch --preserveWatchOutput --listEmittedFiles"
+    "watch": "npx tsc --watch"
   },
   "license": "GPL-3.0-or-later",
   "author": "Xie Yuheng",
