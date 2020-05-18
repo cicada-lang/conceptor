@@ -12,6 +12,7 @@ console.log(
 )
 
 console.log("top of planets:", Concept.pretty_concept(Concept.top(planets)))
+
 console.log(
   "bottom of planets:",
   Concept.pretty_concept(Concept.bottom(planets))

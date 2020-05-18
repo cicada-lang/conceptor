@@ -1,4 +1,3 @@
-- try `obj attr value time` database
 - `concept_lattice` as `CompleteLattice`
 - representation of finite lattice
 - generate lattice

@@ -9,8 +9,8 @@ import * as util from "../util"
 //   to reverse the subject and the object of the verb `have`.
 //   unlike the word `own` can be reversed by `is owned by`.
 export function attrs_extent(ctx: Ctx.Ctx, attrs: Set<string>): Set<string> {
-  let objs: Set<string> = new Set()
-  for (let obj of ctx.objs)
+  const objs: Set<string> = new Set()
+  for (const obj of ctx.objs)
     if (util.forall(attrs, (attr) => Ctx.has(ctx, obj, attr))) objs.add(obj)
   return objs
 }
@@ -20,8 +20,8 @@ export function attrs_extent(ctx: Ctx.Ctx, attrs: Set<string>): Set<string> {
 //   to say this obj has an attr,
 //   is to say each obj of the objs has the attr.
 export function objs_intent(ctx: Ctx.Ctx, objs: Set<string>): Set<string> {
-  let attrs: Set<string> = new Set()
-  for (let attr of ctx.attrs)
+  const attrs: Set<string> = new Set()
+  for (const attr of ctx.attrs)
     if (util.forall(objs, (obj) => Ctx.has(ctx, obj, attr))) attrs.add(attr)
   return attrs
 }
