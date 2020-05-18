@@ -1,4 +1,4 @@
-import * as Ctx from "./ctx"
+import * as Ctx from "../ctx"
 
 export function ctx_from_table(table: {
   [key: string]: Array<string>

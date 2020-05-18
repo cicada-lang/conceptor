@@ -1,4 +1,4 @@
-import * as Ctx from "../ctx/ctx"
+import * as Ctx from "../ctx"
 import * as util from "../util"
 
 export class Concept {
@@ -17,8 +17,3 @@ export class Concept {
     }
   }
 }
-
-export * from "./concept-build"
-export * from "./concept-function"
-export * from "./concept-predicate"
-export * from "./concept-pretty"

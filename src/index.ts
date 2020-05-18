@@ -1,2 +1,2 @@
-export * as Ctx from "./ctx/ctx"
-export * as Concept from "./concept/concept"
+export * as Ctx from "./ctx"
+export * as Concept from "./concept"

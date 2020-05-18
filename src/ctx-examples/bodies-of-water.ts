@@ -1,4 +1,4 @@
-import * as Ctx from "../ctx/ctx"
+import * as Ctx from "../ctx"
 
 // NOTE
 // - A body of water or waterbody (often spelled water body)

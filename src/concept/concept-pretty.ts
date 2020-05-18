@@ -1,4 +1,4 @@
-import * as Concept from "./concept"
+import * as Concept from "../concept"
 
 export function pretty_concept(concept: Concept.Concept): string {
   return JSON.stringify(

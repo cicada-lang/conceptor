@@ -1,5 +1,5 @@
-import * as Concept from "./concept"
-import * as Ctx from "../ctx/ctx"
+import * as Concept from "../concept"
+import * as Ctx from "../ctx"
 import * as util from "../util"
 
 export function sup(ctx: Ctx.Ctx, xs: Array<Concept.Concept>): Concept.Concept {

@@ -1,5 +1,5 @@
-import * as Concept from "./concept"
-import * as Ctx from "../ctx/ctx"
+import * as Concept from "../concept"
+import * as Ctx from "../ctx"
 
 export function top(ctx: Ctx.Ctx): Concept.Concept {
   let objs = Ctx.objs_closure(ctx, ctx.objs)

@@ -1,4 +1,4 @@
-import * as Ctx from "./ctx"
+import * as Ctx from "../ctx"
 import { bodies_of_water } from "../ctx-examples/bodies-of-water"
 import { planets } from "../ctx-examples/planets"
 

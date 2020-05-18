@@ -1,4 +1,4 @@
-import * as Concept from "./concept"
+import * as Concept from "../concept"
 import * as util from "../util"
 
 export function subconcept_p(x: Concept.Concept, y: Concept.Concept): boolean {

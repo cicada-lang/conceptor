@@ -1,4 +1,4 @@
-import * as Ctx from "./ctx"
+import * as Ctx from "../ctx"
 import * as util from "../util"
 
 export function has(ctx: Ctx.Ctx, obj: string, attr: string): boolean {

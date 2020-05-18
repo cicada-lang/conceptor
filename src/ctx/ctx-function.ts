@@ -1,4 +1,4 @@
-import * as Ctx from "./ctx"
+import * as Ctx from "../ctx"
 import * as util from "../util"
 
 // NOTE The extend of a set of attrs is the set of all objs that have all the attrs.

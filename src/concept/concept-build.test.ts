@@ -1,4 +1,4 @@
-import * as Concept from "./concept"
+import * as Concept from "../concept"
 import { bodies_of_water } from "../ctx-examples/bodies-of-water"
 import { planets } from "../ctx-examples/planets"
 
