@@ -1,8 +1,5 @@
-# scala
-target
-
-# parcel
-.cache
+# typescript
+lib
 
 # js
 node_modules

@@ -8,6 +8,14 @@ function build {
     yarn run build
 }
 
+function watch {
+    yarn run watch
+}
+
+function format {
+    yarn run format
+}
+
 function t {
     test_lib node js
 }
