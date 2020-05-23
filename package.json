@@ -23,6 +23,8 @@
     "typescript": "^3.9.3"
   },
   "dependencies": {
-    "fast-deep-equal": "^3.1.1"
+    "@forchange/partech": "^1.0.8",
+    "fast-deep-equal": "^3.1.1",
+    "typedoc": "^0.17.7"
   }
 }
