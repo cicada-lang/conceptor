@@ -7,10 +7,10 @@
   resolved "https://nexus.forchange.cn/repository/npm-group/@types/assert/-/assert-1.4.7.tgz#8add0d031e16e7ad87282f1b55c30813b4632cbd"
   integrity sha1-it0NAx4W562HKC8bVcMIE7RjLL0=
 
-"@types/node@^14.0.1":
-  version "14.0.1"
-  resolved "https://nexus.forchange.cn/repository/npm-group/@types/node/-/node-14.0.1.tgz#5d93e0a099cd0acd5ef3d5bde3c086e1f49ff68c"
-  integrity sha1-XZPgoJnNCs1e89W948CG4fSf9ow=
+"@types/node@^14.0.5":
+  version "14.0.5"
+  resolved "https://nexus.forchange.cn/repository/npm-group/@types/node/-/node-14.0.5.tgz#3d03acd3b3414cf67faf999aed11682ed121f22b"
+  integrity sha1-PQOs07NBTPZ/r5ma7RFoLtEh8is=
 
 fast-deep-equal@^3.1.1:
   version "3.1.1"
@@ -22,7 +22,7 @@ prettier@^2.0.5:
   resolved "https://nexus.forchange.cn/repository/npm-group/prettier/-/prettier-2.0.5.tgz#d6d56282455243f2f92cc1716692c08aa31522d4"
   integrity sha1-1tVigkVSQ/L5LMFxZpLAiqMVItQ=
 
-typescript@^3.9.2:
-  version "3.9.2"
-  resolved "https://nexus.forchange.cn/repository/npm-group/typescript/-/typescript-3.9.2.tgz#64e9c8e9be6ea583c54607677dd4680a1cf35db9"
-  integrity sha1-ZOnI6b5upYPFRgdnfdRoChzzXbk=
+typescript@^3.9.3:
+  version "3.9.3"
+  resolved "https://nexus.forchange.cn/repository/npm-group/typescript/-/typescript-3.9.3.tgz#d3ac8883a97c26139e42df5e93eeece33d610b8a"
+  integrity sha1-06yIg6l8JhOeQt9ek+7s4z1hC4o=
