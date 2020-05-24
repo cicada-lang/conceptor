@@ -4,11 +4,7 @@ import * as Attrs from "../attrs"
 import * as util from "../util"
 
 export class Concept {
-  constructor(
-    ctx: Ctx.Ctx,
-    public objs: Objs.Objs,
-    public attrs: Attrs.Attrs
-  ) {
+  constructor(ctx: Ctx.Ctx, public objs: Objs.Objs, public attrs: Attrs.Attrs) {
     if (!Ctx.match(ctx, objs, attrs)) {
       throw new Error(
         "Concept constructor fail\n" +
