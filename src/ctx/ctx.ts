@@ -1,5 +1,9 @@
+import * as Objs from "../objs"
+import * as Attrs from "../attrs"
+import * as Incidence from "../incidence"
+
 export class Ctx {
-  objs: Set<string> = new Set()
-  attrs: Set<string> = new Set()
-  incidence: Set<string> = new Set()
+  objs: Objs.Objs = new Objs.Objs()
+  attrs: Attrs.Attrs = new Attrs.Attrs()
+  incidence: Incidence.Incidence = new Incidence.Incidence()
 }

@@ -1,11 +1,13 @@
 import * as Ctx from "../ctx"
+import * as Objs from "../objs"
+import * as Attrs from "../attrs"
 import * as util from "../util"
 
 // NOTE objs match attrs
 export function match(
   ctx: Ctx.Ctx,
-  objs: Set<string>,
-  attrs: Set<string>
+  objs: Objs.Objs,
+  attrs: Attrs.Attrs
 ): boolean {
   return (
     util.include(ctx.objs, objs) &&
