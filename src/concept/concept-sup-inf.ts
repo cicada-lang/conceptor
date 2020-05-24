@@ -1,5 +1,7 @@
 import * as Concept from "../concept"
 import * as Ctx from "../ctx"
+import * as Objs from "../objs"
+import * as Attrs from "../attrs"
 import * as util from "../util"
 
 export function sup(ctx: Ctx.Ctx, xs: Array<Concept.Concept>): Concept.Concept {
@@ -7,8 +9,8 @@ export function sup(ctx: Ctx.Ctx, xs: Array<Concept.Concept>): Concept.Concept {
     return Concept.top(ctx)
   }
 
-  const attrs = util.intersection(...xs.map((x) => x.attrs))
-  const objs = Ctx.attrs_extent(ctx, attrs)
+  const attrs = new Attrs.Attrs(util.intersection(...xs.map((x) => x.attrs)))
+  const objs = Ctx.attrs_derive_objs(ctx, attrs)
   return new Concept.Concept(ctx, objs, attrs)
 }
 
@@ -17,7 +19,7 @@ export function inf(ctx: Ctx.Ctx, xs: Array<Concept.Concept>): Concept.Concept {
     return Concept.bottom(ctx)
   }
 
-  const objs = util.intersection(...xs.map((x) => x.objs))
-  const attrs = Ctx.objs_intent(ctx, objs)
+  const objs = new Objs.Objs(util.intersection(...xs.map((x) => x.objs)))
+  const attrs = Ctx.objs_derive_attrs(ctx, objs)
   return new Concept.Concept(ctx, objs, attrs)
 }

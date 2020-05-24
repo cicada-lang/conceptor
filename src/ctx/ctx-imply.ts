@@ -8,7 +8,7 @@ export function imply(
   concluding_attrs: Attrs.Attrs
 ): boolean {
   return util.include(
-    Ctx.attrs_extent(ctx, concluding_attrs),
-    Ctx.attrs_extent(ctx, given_attrs)
+    Ctx.attrs_derive_objs(ctx, concluding_attrs),
+    Ctx.attrs_derive_objs(ctx, given_attrs)
   )
 }

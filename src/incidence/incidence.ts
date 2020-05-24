@@ -1,1 +1,3 @@
-export class Incidence extends Set<string> {}
+export class Incidence extends Set<string> {
+  class_name: "Incidence" = "Incidence"
+}

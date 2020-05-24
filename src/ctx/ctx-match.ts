@@ -12,7 +12,7 @@ export function match(
   return (
     util.include(ctx.objs, objs) &&
     util.include(ctx.attrs, attrs) &&
-    util.equal(Ctx.objs_intent(ctx, objs), attrs) &&
-    util.equal(Ctx.attrs_extent(ctx, attrs), objs)
+    util.equal(Ctx.objs_derive_attrs(ctx, objs), attrs) &&
+    util.equal(Ctx.attrs_derive_objs(ctx, attrs), objs)
   )
 }
