@@ -1,3 +1,4 @@
+- `Objs` and `Attrs` instead of `Set<string>`
 - `concept_lattice` as `CompleteLattice`
 - representation of finite lattice
 - generate lattice

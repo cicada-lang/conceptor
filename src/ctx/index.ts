@@ -1,4 +1,6 @@
 export * from "./ctx"
 export * from "./ctx-build"
 export * from "./ctx-function"
-export * from "./ctx-predicate"
+export * from "./ctx-has"
+export * from "./ctx-imply"
+export * from "./ctx-match"
