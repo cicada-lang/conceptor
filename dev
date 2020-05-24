@@ -20,6 +20,11 @@ function t {
     test_lib node js
 }
 
+function docs {
+    mkdir -p docs/api &&
+        npx typedoc src --out docs/api/formal-concept --mode modules --ignoreCompilerErrors
+}
+
 function test_lib {
     prog=$1
     ext=$2
