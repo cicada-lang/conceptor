@@ -2,8 +2,6 @@
 
 Formal concept analysis.
 
-- `npm install @cicadoidea/formal-concept`
-
 ## Community
 
 Contributions are welcome, see [current TODO list](TODO.md) for tasks. <br>
