@@ -13,7 +13,4 @@ console.log(
 
 console.log("top of planets:", Concept.repr(Concept.top(planets)))
 
-console.log(
-  "bottom of planets:",
-  Concept.repr(Concept.bottom(planets))
-)
+console.log("bottom of planets:", Concept.repr(Concept.bottom(planets)))
