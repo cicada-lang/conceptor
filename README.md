@@ -1,6 +1,4 @@
-# Formal Concept
-
-Formal concept analysis.
+# Formal concept analysis / 形式概念分析
 
 ## Community
 

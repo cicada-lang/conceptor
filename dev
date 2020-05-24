@@ -22,7 +22,7 @@ function t {
 
 function docs {
     mkdir -p docs/api &&
-        npx typedoc src --out docs/api/formal-concept --mode modules --ignoreCompilerErrors
+        npx typedoc src --out docs/api --mode modules --ignoreCompilerErrors
 }
 
 function test_lib {
