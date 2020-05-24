@@ -2,45 +2,15 @@
 # yarn lockfile v1
 
 
-"@forchange/partech@^1.0.8":
-  version "1.0.8"
-  resolved "https://nexus.forchange.cn/repository/npm-group/@forchange/partech/-/partech-1.0.8.tgz#87cd66cbad5a05cb265ead92807d186480f6c2bb"
-  integrity sha512-D7vSMAwwFzOAsgyFl21qwdaYGC9rcwClJr9s6oyxXr1/COJYm57d7Vio5erMBsJkxR7KQOtVJLOkKlDr8Uy5yg==
-  dependencies:
-    "@forchange/readable-regular-expression" "^0.0.9"
-    chalk "^4.0.0"
-    fast-deep-equal "^3.1.1"
-    glob "^7.1.6"
-
-"@forchange/readable-regular-expression@^0.0.9":
-  version "0.0.9"
-  resolved "https://nexus.forchange.cn/repository/npm-group/@forchange/readable-regular-expression/-/readable-regular-expression-0.0.9.tgz#ffaed8e7aa0c25c142d4ba974c0c428238b2abd8"
-  integrity sha512-Yllc4/LATcLjj/LqQRm87kok5ApAlj4VIvMnygrzdHbKEc/cSYrOEWEPDBh7rnqzpEJcypq/sanPdg6ioL6r5A==
-  dependencies:
-    fast-deep-equal "^3.1.1"
-
 "@types/assert@^1.4.7":
   version "1.4.7"
   resolved "https://nexus.forchange.cn/repository/npm-group/@types/assert/-/assert-1.4.7.tgz#8add0d031e16e7ad87282f1b55c30813b4632cbd"
   integrity sha1-it0NAx4W562HKC8bVcMIE7RjLL0=
 
-"@types/color-name@^1.1.1":
-  version "1.1.1"
-  resolved "https://nexus.forchange.cn/repository/npm-group/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
-  integrity sha1-HBJhu+qhCoBVu8XYq4S3sq/IRqA=
-
 "@types/node@^14.0.5":
   version "14.0.5"
   resolved "https://nexus.forchange.cn/repository/npm-group/@types/node/-/node-14.0.5.tgz#3d03acd3b3414cf67faf999aed11682ed121f22b"
   integrity sha1-PQOs07NBTPZ/r5ma7RFoLtEh8is=
-
-ansi-styles@^4.1.0:
-  version "4.2.1"
-  resolved "https://nexus.forchange.cn/repository/npm-group/ansi-styles/-/ansi-styles-4.2.1.tgz#90ae75c424d008d2624c5bf29ead3177ebfcf359"
-  integrity sha1-kK51xCTQCNJiTFvynq0xd+v881k=
-  dependencies:
-    "@types/color-name" "^1.1.1"
-    color-convert "^2.0.1"
 
 balanced-match@^1.0.0:
   version "1.0.0"
@@ -54,26 +24,6 @@ brace-expansion@^1.1.7:
   dependencies:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
-
-chalk@^4.0.0:
-  version "4.0.0"
-  resolved "https://nexus.forchange.cn/repository/npm-group/chalk/-/chalk-4.0.0.tgz#6e98081ed2d17faab615eb52ac66ec1fe6209e72"
-  integrity sha1-bpgIHtLRf6q2FetSrGbsH+YgnnI=
-  dependencies:
-    ansi-styles "^4.1.0"
-    supports-color "^7.1.0"
-
-color-convert@^2.0.1:
-  version "2.0.1"
-  resolved "https://nexus.forchange.cn/repository/npm-group/color-convert/-/color-convert-2.0.1.tgz#72d3a68d598c9bdb3af2ad1e84f21d896abd4de3"
-  integrity sha1-ctOmjVmMm9s68q0ehPIdiWq9TeM=
-  dependencies:
-    color-name "~1.1.4"
-
-color-name@~1.1.4:
-  version "1.1.4"
-  resolved "https://nexus.forchange.cn/repository/npm-group/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
-  integrity sha1-wqCah6y95pVD3m9j+jmVyCbFNqI=
 
 commander@~2.20.3:
   version "2.20.3"
@@ -104,7 +54,7 @@ fs.realpath@^1.0.0:
   resolved "https://nexus.forchange.cn/repository/npm-group/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
-glob@^7.0.0, glob@^7.1.6:
+glob@^7.0.0:
   version "7.1.6"
   resolved "https://nexus.forchange.cn/repository/npm-group/glob/-/glob-7.1.6.tgz#141f33b81a7c2492e125594307480c46679278a6"
   integrity sha1-FB8zuBp8JJLhJVlDB0gMRmeSeKY=
@@ -132,11 +82,6 @@ handlebars@^4.7.6:
     wordwrap "^1.0.0"
   optionalDependencies:
     uglify-js "^3.1.4"
-
-has-flag@^4.0.0:
-  version "4.0.0"
-  resolved "https://nexus.forchange.cn/repository/npm-group/has-flag/-/has-flag-4.0.0.tgz#944771fd9c81c81265c4d6941860da06bb59479b"
-  integrity sha1-lEdx/ZyByBJlxNaUGGDaBrtZR5s=
 
 highlight.js@^10.0.0:
   version "10.0.3"
@@ -254,13 +199,6 @@ source-map@^0.6.1:
   version "0.6.1"
   resolved "https://nexus.forchange.cn/repository/npm-group/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha1-dHIq8y6WFOnCh6jQu95IteLxomM=
-
-supports-color@^7.1.0:
-  version "7.1.0"
-  resolved "https://nexus.forchange.cn/repository/npm-group/supports-color/-/supports-color-7.1.0.tgz#68e32591df73e25ad1c4b49108a2ec507962bfd1"
-  integrity sha1-aOMlkd9z4lrRxLSRCKLsUHliv9E=
-  dependencies:
-    has-flag "^4.0.0"
 
 typedoc-default-themes@^0.10.1:
   version "0.10.1"
