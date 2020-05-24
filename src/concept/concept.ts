@@ -14,4 +14,12 @@ export class Concept {
       )
     }
   }
+
+  get extent(): Objs.Objs {
+    return this.objs
+  }
+
+  get intent(): Attrs.Attrs {
+    return this.attrs
+  }
 }
