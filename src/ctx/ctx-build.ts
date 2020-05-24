@@ -1,6 +1,6 @@
 import * as Ctx from "../ctx"
 
-export function ctx_from_table(table: {
+export function from_table(table: {
   [key: string]: Array<string>
 }): Ctx.Ctx {
   const ctx = new Ctx.Ctx()
