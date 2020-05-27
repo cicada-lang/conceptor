@@ -74,6 +74,10 @@
 
 一组属性所衍生的物体所衍生的属性，就是这组属性的闭包。
 
+TODO 对比一般的闭包算子，以及拓扑学的闭包算子。
+- https://en.wikipedia.org/wiki/Closure_operator
+- https://en.wikipedia.org/wiki/Characterizations_of_the_category_of_topological_spaces
+
 ## 用物体与属性生成概念
 
 闭集与它的衍生集，构成概念。
