@@ -6,8 +6,8 @@ export class ConceptLattice extends Lattice.CompleteLattice<Concept.Concept> {
   constructor(public ctx: Ctx.Ctx) {
     super(
       Concept.subconcept_p,
-      (xs) => Concept.sup(ctx, xs),
-      (xs) => Concept.inf(ctx, xs)
+      (xs) => Concept.supremum(ctx, xs),
+      (xs) => Concept.infimum(ctx, xs)
     )
   }
 }

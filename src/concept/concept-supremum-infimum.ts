@@ -4,7 +4,10 @@ import * as Objs from "../objs"
 import * as Attrs from "../attrs"
 import * as util from "../util"
 
-export function sup(ctx: Ctx.Ctx, xs: Array<Concept.Concept>): Concept.Concept {
+export function supremum(
+  ctx: Ctx.Ctx,
+  xs: Array<Concept.Concept>
+): Concept.Concept {
   if (xs.length === 0) {
     return Concept.top(ctx)
   }
@@ -14,7 +17,10 @@ export function sup(ctx: Ctx.Ctx, xs: Array<Concept.Concept>): Concept.Concept {
   return new Concept.Concept(ctx, objs, attrs)
 }
 
-export function inf(ctx: Ctx.Ctx, xs: Array<Concept.Concept>): Concept.Concept {
+export function infimum(
+  ctx: Ctx.Ctx,
+  xs: Array<Concept.Concept>
+): Concept.Concept {
   if (xs.length === 0) {
     return Concept.bottom(ctx)
   }

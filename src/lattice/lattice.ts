@@ -9,20 +9,20 @@ export class Lattice<T> {
 export class CompleteLattice<T> extends Lattice<T> {
   constructor(
     public pre: (x: T, y: T) => boolean,
-    public sup: (xs: Array<T>) => T,
-    public inf: (xs: Array<T>) => T
+    public supremum: (xs: Array<T>) => T,
+    public infimum: (xs: Array<T>) => T
   ) {
     super(
       pre,
-      (x, y) => sup([x, y]),
-      (x, y) => inf([x, y])
+      (x, y) => supremum([x, y]),
+      (x, y) => infimum([x, y])
     )
   }
 
   get top(): T {
-    return this.inf([])
+    return this.infimum([])
   }
   get bottom(): T {
-    return this.sup([])
+    return this.supremum([])
   }
 }
