@@ -1,4 +1,3 @@
-- `concept_lattice` as `CompleteLattice`
 - representation of finite lattice
 - generate lattice
 - theory of readable Hasse diagram

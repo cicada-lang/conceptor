@@ -1,5 +1,5 @@
 import * as Ctx from "../ctx"
-import * as Incidence from "../incidence"
+import * as Relation from "../relation"
 
 export function from_table(table: { [key: string]: Array<string> }): Ctx.Ctx {
   const ctx = new Ctx.Ctx()
@@ -8,7 +8,7 @@ export function from_table(table: { [key: string]: Array<string> }): Ctx.Ctx {
     ctx.objs.add(obj)
     for (const attr of attrs) {
       ctx.attrs.add(attr)
-      ctx.incidence.add(Incidence.format(obj, attr))
+      ctx.relation.add(Relation.format(obj, attr))
     }
   }
 

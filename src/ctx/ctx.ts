@@ -1,9 +1,9 @@
 import * as Objs from "../objs"
 import * as Attrs from "../attrs"
-import * as Incidence from "../incidence"
+import * as Relation from "../relation"
 
 export class Ctx {
   objs: Objs.Objs = new Objs.Objs()
   attrs: Attrs.Attrs = new Attrs.Attrs()
-  incidence: Incidence.Incidence = new Incidence.Incidence()
+  relation: Relation.Relation = new Relation.Relation()
 }
