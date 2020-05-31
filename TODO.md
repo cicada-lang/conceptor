@@ -1,4 +1,4 @@
-- concept should be a predicate instead of a class
+- concept use lazy `objs` and `attrs`
 - representation of finite lattice
 - generate lattice
 - theory of readable Hasse diagram
