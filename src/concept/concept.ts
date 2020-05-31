@@ -1,7 +1,7 @@
 import * as Ctx from "../ctx"
 import * as Objs from "../objs"
 import * as Attrs from "../attrs"
-import * as util from "../util"
+import * as ut from "../ut"
 
 export class Concept {
   constructor(public objs: Objs.Objs, public attrs: Attrs.Attrs) {}

@@ -2,7 +2,7 @@ import * as Concept from "../concept"
 import * as Ctx from "../ctx"
 import * as Objs from "../objs"
 import * as Attrs from "../attrs"
-import * as util from "../util"
+import * as ut from "../ut"
 
 export function supremum(
   ctx: Ctx.Ctx,
@@ -12,7 +12,7 @@ export function supremum(
     return Concept.top(ctx)
   }
 
-  const attrs = new Attrs.Attrs(util.intersection(...xs.map((x) => x.attrs)))
+  const attrs = new Attrs.Attrs(ut.intersection(...xs.map((x) => x.attrs)))
   const objs = Ctx.attrs_derive_objs(ctx, attrs)
   return new Concept.Concept(objs, attrs)
 }
@@ -25,7 +25,7 @@ export function infimum(
     return Concept.bottom(ctx)
   }
 
-  const objs = new Objs.Objs(util.intersection(...xs.map((x) => x.objs)))
+  const objs = new Objs.Objs(ut.intersection(...xs.map((x) => x.objs)))
   const attrs = Ctx.objs_derive_attrs(ctx, objs)
   return new Concept.Concept(objs, attrs)
 }

@@ -1,7 +1,7 @@
 import * as Ctx from "../ctx"
 import * as Objs from "../objs"
 import * as Attrs from "../attrs"
-import * as util from "../util"
+import * as ut from "../ut"
 
 // NOTE objs match attrs
 export function match(
@@ -10,9 +10,9 @@ export function match(
   attrs: Attrs.Attrs
 ): boolean {
   return (
-    util.include(ctx.objs, objs) &&
-    util.include(ctx.attrs, attrs) &&
-    util.equal(Ctx.objs_derive_attrs(ctx, objs), attrs) &&
-    util.equal(Ctx.attrs_derive_objs(ctx, attrs), objs)
+    ut.include(ctx.objs, objs) &&
+    ut.include(ctx.attrs, attrs) &&
+    ut.equal(Ctx.objs_derive_attrs(ctx, objs), attrs) &&
+    ut.equal(Ctx.attrs_derive_objs(ctx, attrs), objs)
   )
 }
