@@ -1,6 +1,7 @@
 # 为什么研究形式概念分析？
 
 - 用于哲学：皮尔士的实用主义原则。
+  - 还有皮尔士的 relation algebra。
 
 - 给中小企业用："Big data" vs "Big meaning"。
 
