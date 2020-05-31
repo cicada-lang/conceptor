@@ -1,3 +1,4 @@
+- concept should be a predicate instead of a class
 - representation of finite lattice
 - generate lattice
 - theory of readable Hasse diagram
