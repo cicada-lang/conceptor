@@ -1,5 +1,4 @@
-- `ut.set.` instead of `ut.`
-- concept use lazy `objs` and `attrs`
+- [algo] all intersection of set of subsets
 - representation of finite lattice
-- generate lattice
+- generate concept lattice
 - theory of readable Hasse diagram

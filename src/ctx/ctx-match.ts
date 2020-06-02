@@ -10,8 +10,8 @@ export function match(
   attrs: Attrs.Attrs
 ): boolean {
   return (
-    ut.include(ctx.objs, objs) &&
-    ut.include(ctx.attrs, attrs) &&
+    ut.set.include(ctx.objs, objs) &&
+    ut.set.include(ctx.attrs, attrs) &&
     ut.equal(Ctx.objs_derive_attrs(ctx, objs), attrs) &&
     ut.equal(Ctx.attrs_derive_objs(ctx, attrs), objs)
   )

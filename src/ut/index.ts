@@ -1,2 +1,2 @@
 export * from "./equal"
-export * from "./set-function"
+export * as set from "./set"

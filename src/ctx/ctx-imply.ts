@@ -7,7 +7,7 @@ export function imply(
   given_attrs: Attrs.Attrs,
   concluding_attrs: Attrs.Attrs
 ): boolean {
-  return ut.include(
+  return ut.set.include(
     Ctx.attrs_derive_objs(ctx, concluding_attrs),
     Ctx.attrs_derive_objs(ctx, given_attrs)
   )

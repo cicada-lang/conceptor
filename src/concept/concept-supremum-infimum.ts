@@ -12,7 +12,7 @@ export function supremum(
     return Concept.top(ctx)
   }
 
-  const attrs = new Attrs.Attrs(ut.intersection(...xs.map((x) => x.attrs)))
+  const attrs = new Attrs.Attrs(ut.set.intersection(...xs.map((x) => x.attrs)))
   const objs = Ctx.attrs_derive_objs(ctx, attrs)
   return new Concept.Concept(objs, attrs)
 }
@@ -25,7 +25,7 @@ export function infimum(
     return Concept.bottom(ctx)
   }
 
-  const objs = new Objs.Objs(ut.intersection(...xs.map((x) => x.objs)))
+  const objs = new Objs.Objs(ut.set.intersection(...xs.map((x) => x.objs)))
   const attrs = Ctx.objs_derive_attrs(ctx, objs)
   return new Concept.Concept(objs, attrs)
 }
