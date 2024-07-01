@@ -8,4 +8,4 @@ export const planets = {
   uranus: ["size.medium", "distance-from-sun.far", "moon.yes"],
   neptune: ["size.medium", "distance-from-sun.far", "moon.yes"],
   pluto: ["size.small", "distance-from-sun.far", "moon.yes"],
-}
+} as const

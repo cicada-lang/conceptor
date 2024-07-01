@@ -1,6 +1,5 @@
 # concept context
 
-`entityHasAttribute.test`
 `commonAttributes`
 `commonAttributes.test`
 `commonEntities`
