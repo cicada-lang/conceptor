@@ -5,10 +5,6 @@ export type Concept = {
   intent: Attributes
 }
 
-export function Concept(
-  extent: Entities,
-  intent: Attributes
-): Concept{
-  return { extent, intent
-  }
+export function Concept(extent: Entities, intent: Attributes): Concept {
+  return { extent, intent }
 }
