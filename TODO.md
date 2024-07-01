@@ -1,4 +1,3 @@
-`CrossTable`
 `createContextFromCrossTable`
 `entityHasAttribute`
 `entityHasAttribute.test`
