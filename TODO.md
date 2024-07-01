@@ -1,6 +1,5 @@
 # concept context
 
-`createContextFromCrossTable`
 `entityHasAttribute`
 `entityHasAttribute.test`
 `commonAttributes`
