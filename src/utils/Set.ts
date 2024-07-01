@@ -38,6 +38,10 @@ export function setIsSubsetOf<T>(x: Set<T>, y: Set<T>): boolean {
   return true
 }
 
+export function setEqual<T>(x: Set<T>, y: Set<T>): boolean {
+  return setIsSubsetOf(x, y) && setIsSubsetOf(y, x)
+}
+
 export function setIsSupersetOf<T>(x: Set<T>, y: Set<T>): boolean {
   return setIsSubsetOf(y, x)
 }
