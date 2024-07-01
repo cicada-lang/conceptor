@@ -1,9 +1,9 @@
-export type Entities = Set<string>
-export type Attributes = Set<string>
+export type Entity = string
+export type Attribute = string
 
 export type Context = {
-  entities: Entities
-  attributes: Attributes
+  entities: Set<Entity>
+  attributes: Set<Attribute>
   entityAttributeIndex: Map<string, Set<string>>
 }
 
