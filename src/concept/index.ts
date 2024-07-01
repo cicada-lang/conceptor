@@ -1,5 +1,0 @@
-export * from "./concept"
-export * from "./concept-repr"
-export * from "./concept-top-bottom"
-export * from "./concept-supremum-infimum"
-export * from "./concept-predicate"

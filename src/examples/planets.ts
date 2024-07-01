@@ -1,6 +1,6 @@
-import * as Ctx from "../ctx"
 
-export const planets = Ctx.from_table({
+
+export const planets = ({
   mercury: ["size.small", "distance-from-sun.near", "moon.no"],
   venus: ["size.small", "distance-from-sun.near", "moon.no"],
   earth: ["size.small", "distance-from-sun.near", "moon.yes"],

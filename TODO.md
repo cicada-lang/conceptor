@@ -1,4 +1,3 @@
-remove old code
 update typescript project
 
 # old

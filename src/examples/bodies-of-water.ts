@@ -1,4 +1,4 @@
-import * as Ctx from "../ctx"
+
 
 // NOTE
 // - A body of water or waterbody (often spelled water body)
@@ -6,7 +6,7 @@ import * as Ctx from "../ctx"
 //   generally on a planet's surface.
 // - <https://en.wikipedia.org/wiki/Body_of_water>
 
-export const bodies_of_water = Ctx.from_table({
+export const bodies_of_water = ({
   canal: ["running", "constant"],
   channel: ["running", "constant"],
   lagoon: ["natural", "stagnant", "constant", "maritime"],
