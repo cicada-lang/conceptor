@@ -1,16 +1,31 @@
-# Formal concept analysis / 形式概念分析
+# Conceptor
 
-## Community
+An implementation of [formal concept analysis](https://en.wikipedia.org/wiki/Formal_concept_analysis).
 
-Contributions are welcome, see [current TODO list](TODO.md) for tasks. <br>
-(Please add yourself to [the AUTHORS list](AUTHORS) if you made any contributions.)
+## Development
 
-- We enforce C4 as collaboration protocol.
-  - [The C4 RFC](https://rfc.zeromq.org/spec:42/C4)
-- [Style Guide](STYLE-GUIDE.md)
-  - Observe the style of existing code and respect it.
-- [Code of Conduct](CODE-OF-CONDUCT.md)
+```sh
+npm install     # Install dependencies
+npm run build   # Compile `src/` to `lib/`
+npm run test    # Run test
+```
+
+## References
+
+**Papers**:
+
+TODO
+
+## Contributions
+
+To make a contribution, fork this project and create a pull request.
+
+Please read the [STYLE-GUIDE.md](STYLE-GUIDE.md) before you change the code.
+
+Remember to add yourself to [AUTHORS](AUTHORS).
+Your line belongs to you, you can write a little
+introduction to yourself but not too long.
 
 ## License
 
-- [GPLv3](LICENSE)
+[GPLv3](LICENSE)
