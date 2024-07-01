@@ -1,4 +1,3 @@
-`Context` -- rename `crossTable` to `entityAttributeIndex`
 `CrossTable`
 `createContextFromCrossTable`
 `entityHasAttribute`
