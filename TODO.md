@@ -1,7 +1,13 @@
+# concept context
+
 `createContextFromCrossTable`
 `entityHasAttribute`
 `entityHasAttribute.test`
 `commonAttributes`
+`commonAttributes.test`
 `commonEntities`
+`commonEntities.test`
 
-generate concept lattice
+# concept lattice
+
+`generateConceptLattice`
