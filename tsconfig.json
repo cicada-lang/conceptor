@@ -1,15 +1,15 @@
 {
-  "include": [ "src" ],
+  "include": ["src"],
   "compilerOptions": {
-    "lib": [ "es2019" ],
-    "target": "esnext",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "declaration": true,
+    "lib": ["esnext", "dom"],
+    "module": "node16",
+    "target": "es2017",
     "strict": true,
-    "outDir": "lib",
-    "baseUrl": ".",
-    "paths": { "*": [ "node_modules/*" ] },
+    "verbatimModuleSyntax": true,
+    "declaration": true,
+    "sourceMap": true,
+    "declarationMap": true,
+    "resolveJsonModule": true,
+    "outDir": "lib"
   }
 }

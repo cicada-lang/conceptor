@@ -1,5 +1,3 @@
-update typescript project
-
 # old
 
 [note] translate dijkstra's lattice paper to formal language (or chinese)

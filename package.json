@@ -1,23 +1,25 @@
 {
-  "name": "formal-concept-analysis",
+  "name": "conceptor",
+  "version": "0.0.1",
+  "repository": "github:cicada-lang/conceptor",
+  "type": "module",
+  "main": "./lib/index.js",
   "files": [
+    "src",
     "lib"
   ],
-  "main": "lib/main.js",
-  "version": "0.0.1",
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
+    "test": "node --test",
     "format": "prettier src --write"
   },
-  "license": "GPL-3.0-or-later",
-  "author": "Xie Yuheng",
+  "dependencies": {  },
   "devDependencies": {
-    "@types/node": "^14.0.5",
-    "prettier": "^2.0.5",
-    "typescript": "^3.9.3"
+    "@types/node": "^20.14.9",
+    "prettier": "^3.3.2",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "typescript": "^5.5.2"
   },
-  "dependencies": {
-    "fast-deep-equal": "^3.1.1"
-  }
+  "license": "GPL-3.0-or-later"
 }
