@@ -10,12 +10,6 @@ npm run build   # Compile `src/` to `lib/`
 npm run test    # Run test
 ```
 
-## References
-
-**Papers**:
-
-TODO
-
 ## Contributions
 
 To make a contribution, fork this project and create a pull request.
