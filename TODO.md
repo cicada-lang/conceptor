@@ -1,4 +1,3 @@
-Concept
 commonAttributes
 commonEntities
 generate concept lattice
