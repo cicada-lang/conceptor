@@ -1,9 +1,2 @@
-# old
-
-[note] translate dijkstra's lattice paper to formal language (or chinese)
-[note] attributes is equal to subsets
-[algo] all intersection of set of subsets
-[algo] generating closed sets in letical order
-representation of finite lattice
+Concept
 generate concept lattice
-theory of readable Hasse diagram
