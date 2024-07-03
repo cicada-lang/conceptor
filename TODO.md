@@ -1,4 +1,3 @@
-making `Context` immutable
 making `Concept` immutable
 
 # learn
