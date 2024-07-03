@@ -6,8 +6,6 @@
 
 # concept
 
-`closureEntities`
-`closureAttributes`
 `isExtent`
 `isIntent`
 `conceptFromEntities` -- 构造 immutable 的 `Concept`
