@@ -1,6 +1,5 @@
 # concept context
 
-`commonEntities`
 `commonEntities.test`
 
 回顾 lattice 书，看看还函数需要加什么 API
