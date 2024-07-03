@@ -6,6 +6,7 @@
 
 # concept
 
+`extent-intent.test`
 `conceptFromEntities` -- 构造 immutable 的 `Concept`
 `conceptFromAttributes` -- 构造 immutable 的 `Concept`
 `conceptFromEntity` -- 构造 immutable 的 `Concept` -- 有更好的名字吗？

@@ -21,4 +21,4 @@ export const waterbodies = {
   tarn: ["natural", "stagnant", "constant"],
   torrent: ["running", "natural", "constant"],
   trickle: ["running", "natural", "constant"],
-} as const
+}
