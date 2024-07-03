@@ -1,5 +1,7 @@
 export * from "./closureAttributes.js"
 export * from "./closureEntities.js"
 export * from "./Concept.js"
+export * from "./conceptFromAttributes.js"
+export * from "./conceptFromEntities.js"
 export * from "./isExtent.js"
 export * from "./isIntent.js"
