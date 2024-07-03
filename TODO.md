@@ -23,4 +23,8 @@
 # lattice
 
 实现 concept 之间的序关系
+
+lessGeneral
+moreGeneral
+
 `generateConceptLattice` -- 生成所有的
