@@ -4,7 +4,9 @@ import { closureEntities } from "./index.js"
 
 export function isExtent(
   context: Context,
-  entities: ReadonlySet<Entity>,
+  entities: ReadonlySet<Entity> | ReadonlyArray<Entity>,
 ): boolean {
+  entities = new Set(entities)
+
   return setEqual(closureEntities(context, entities), entities)
 }

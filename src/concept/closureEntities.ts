@@ -7,7 +7,7 @@ import {
 
 export function closureEntities(
   context: Context,
-  entities: ReadonlySet<Entity>,
+  entities: ReadonlySet<Entity> | ReadonlyArray<Entity>,
 ): ReadonlySet<Entity> {
   return commonEntities(context, commonAttributes(context, entities))
 }

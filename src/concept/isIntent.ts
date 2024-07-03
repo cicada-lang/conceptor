@@ -4,7 +4,9 @@ import { closureAttributes } from "./index.js"
 
 export function isIntent(
   context: Context,
-  attributes: ReadonlySet<Attribute>,
+  attributes: ReadonlySet<Attribute> | ReadonlyArray<Attribute>,
 ): boolean {
+  attributes = new Set(attributes)
+
   return setEqual(closureAttributes(context, attributes), attributes)
 }

@@ -1,21 +1,20 @@
+import assert from "node:assert"
 import test from "node:test"
-
-export const planets = {
-  mercury: ["size.small", "distance-from-sun.near", "moon.no"],
-  venus: ["size.small", "distance-from-sun.near", "moon.no"],
-  earth: ["size.small", "distance-from-sun.near", "moon.yes"],
-  mars: ["size.small", "distance-from-sun.near", "moon.yes"],
-  jupiter: ["size.large", "distance-from-sun.far", "moon.yes"],
-  saturn: ["size.large", "distance-from-sun.far", "moon.yes"],
-  uranus: ["size.medium", "distance-from-sun.far", "moon.yes"],
-  neptune: ["size.medium", "distance-from-sun.far", "moon.yes"],
-  pluto: ["size.small", "distance-from-sun.far", "moon.yes"],
-} as const
+import { createContextFromCrossTable } from "../context/createContextFromCrossTable.js"
+import { planets } from "../examples/planets.js"
+import { isExtent } from "./isExtent.js"
+import { isIntent } from "./isIntent.js"
 
 test("isExtent", () => {
-  //
+  const context = createContextFromCrossTable(planets)
+
+  assert(!isExtent(context, ["earth"]))
+  assert(isExtent(context, ["earth", "mars"]))
 })
 
 test("isIntent", () => {
-  //
+  const context = createContextFromCrossTable(planets)
+
+  assert(!isIntent(context, ["size.large"]))
+  assert(isIntent(context, ["size.large", "distance-from-sun.far", "moon.yes"]))
 })
