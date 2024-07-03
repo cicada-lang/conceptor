@@ -1,6 +1,6 @@
-# concept context
+drop set prefix from set functions
 
-`commonEntities.test`
+# concept context
 
 回顾 lattice 书，看看还函数需要加什么 API
 

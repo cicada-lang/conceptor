@@ -1,18 +1,18 @@
+import { setIsSupersetOf } from "../utils/Set.js"
 import type { Attribute, Context, Entity } from "./index.js"
 
 export function commonEntities(
   context: Context,
-  attributes: Set<Attribute> | Array<Attribute>,
+  inputAttributes: Set<Attribute> | Array<Attribute>,
 ): Set<Entity> {
-  attributes = new Set(attributes)
-  const entities = new Set<Entity>()
-  for (const attribute of attributes) {
-    for (const [keyEntity, attributeSet] of context.entityAttributeIndex) {
-      if (attributeSet.has(attribute)) {
-        entities.add(keyEntity)
-      }
+  inputAttributes = new Set(inputAttributes)
+
+  const resultEntities = new Set<Entity>()
+  for (const [keyEntity, foundAttributes] of context.entityAttributeIndex) {
+    if (setIsSupersetOf(foundAttributes, inputAttributes)) {
+      resultEntities.add(keyEntity)
     }
   }
 
-  return entities
+  return resultEntities
 }
