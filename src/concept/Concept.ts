@@ -4,8 +4,8 @@ import type { Attribute, Context, Entity } from "../context/Context.js"
 // 因此 context 应该是 concept 的一部分，
 // 并且我们需要假设 context 是不能变的（immutable）。
 
-export type Concept = {
+export type Concept = Readonly<{
   context: Context
-  extent: Set<Entity>
-  intent: Set<Attribute>
-}
+  extent: ReadonlySet<Entity>
+  intent: ReadonlySet<Attribute>
+}>
