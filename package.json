@@ -18,8 +18,8 @@
   "devDependencies": {
     "@types/node": "^20.14.9",
     "prettier": "^3.3.2",
-    "prettier-plugin-organize-imports": "^3.2.4",
-    "typescript": "^5.5.2"
+    "prettier-plugin-organize-imports": "^4.0.0",
+    "typescript": "^5.5.3"
   },
   "license": "GPL-3.0-or-later"
 }
