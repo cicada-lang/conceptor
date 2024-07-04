@@ -15,9 +15,9 @@ export function conceptFromEntities(
   const intent = commonAttributes(context, entities)
   const extent = commonEntities(context, intent)
 
-  return {
+  return Object.freeze({
     context,
     extent,
     intent,
-  }
+  })
 }

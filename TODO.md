@@ -4,10 +4,6 @@
 实现 lattice 书中的 "from theory to practice"
 读 rudolf wille 的原始论文和书
 
-# concept
-
-`conceptFromAttributes`
-
 # context
 
 `generateAllConcepts`
