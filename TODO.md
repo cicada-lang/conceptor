@@ -1,5 +1,4 @@
-# context
-
+`conceptFormat`
 `generateConcepts` test
 
 # lattice

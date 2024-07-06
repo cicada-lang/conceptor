@@ -5,12 +5,6 @@ import { planets } from "../examples/planets.js"
 import { isExtent } from "./isExtent.js"
 import { isIntent } from "./isIntent.js"
 
-test("isExtent", () => {
-  const context = createContextFromCrossTable(planets)
-
-  assert(!isExtent(context, ["earth"]))
-  assert(isExtent(context, ["earth", "mars"]))
-})
 
 test("isIntent", () => {
   const context = createContextFromCrossTable(planets)
