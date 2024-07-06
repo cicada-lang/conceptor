@@ -5,7 +5,7 @@ import {
   createConceptSet,
   type Concept,
 } from "../concept/index.js"
-import type { Context } from "./index.js"
+import type { Context } from "../context/index.js"
 
 export function generateConcepts(context: Context): Array<Concept> {
   const targets = createConceptSet()

@@ -1,5 +1,5 @@
-`conceptFormat`
-`generateConcepts` test
+`format/formatConcept`
+`lattice/generateConcepts` test by `formatConcept`
 
 # lattice
 
