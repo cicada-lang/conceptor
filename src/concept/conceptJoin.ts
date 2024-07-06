@@ -4,10 +4,7 @@ import type { Concept } from "./Concept.js"
 import { conceptFromAttributes } from "./conceptFromAttributes.js"
 
 export function conceptJoin(x: Concept, y: Concept): Concept {
-  assertSameContext([x, y], {
-    who: "conceptJoin",
-    message: "I expect the contexts of x and y to be the same.",
-  })
+  assertSameContext([x, y], { who: "conceptJoin" })
 
   return conceptFromAttributes(x.context, setIntersection(x.intent, y.intent))
 }

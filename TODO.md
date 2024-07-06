@@ -1,6 +1,8 @@
 # lattice
 
-`lattice/conceptBelow` & `lattice/conceptAbove`
+`lattice/conceptBelow`
+`lattice/conceptAbove`
+
 `LatticeLayout`
 `layoutLattice(context)`
 
