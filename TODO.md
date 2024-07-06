@@ -1,7 +1,3 @@
-# concept
-
-`conceptMeet`
-
 # context
 
 `generateConcepts(context)`
