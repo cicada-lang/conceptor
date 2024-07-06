@@ -1,11 +1,8 @@
 # lattice
 
-实现 concept 之间的序关系
-
-- lessGeneral
-- moreGeneral
-
-`buildLattice(context)`
+`lattice/conceptBelow` & `lattice/conceptAbove`
+`LatticeLayout`
+`layoutLattice(context)`
 
 # optimize
 
