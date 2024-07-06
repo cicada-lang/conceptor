@@ -1,8 +1,18 @@
-import type { Concept } from "../concept/index.js"
+import {
+  conceptFromEntities,
+  createConceptSet,
+  type Concept,
+} from "../concept/index.js"
 import type { Context } from "./index.js"
 
 export function generateConcepts(context: Context): Array<Concept> {
-  const targets: Array<Concept> = []
-  const results: Array<Concept> = []
-  return results
+  const targets = createConceptSet()
+  const results = createConceptSet()
+  for (const entity of context.entities) {
+    const entityConcept = conceptFromEntities(context, [entity])
+    targets.add(entityConcept)
+    results.add(entityConcept)
+  }
+
+  return results.representatives
 }

@@ -1,3 +1,8 @@
+# concept
+
+`conceptJoin`
+`conceptMeet`
+
 # context
 
 `generateConcepts(context)`
