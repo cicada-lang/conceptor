@@ -1,4 +1,4 @@
-export type QuotientSetOpitons<T>  = {
+export type QuotientSetOpitons<T> = {
   equal: (x: T, y: T) => boolean
 }
 
@@ -9,6 +9,10 @@ export class QuotientSet<T> {
   constructor(options: QuotientSetOpitons<T>) {
     this.representatives = []
     this.equal = options.equal
+  }
+
+  get size(): number {
+    return this.representatives.length
   }
 
   has(x: T): boolean {

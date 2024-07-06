@@ -1,5 +1,3 @@
-`utils/QuotientSet.test`
-
 # context
 
 `generateConcepts(context)`
