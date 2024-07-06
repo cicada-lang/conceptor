@@ -1,15 +1,10 @@
 # concept
 
-`conceptJoin`
 `conceptMeet`
 
 # context
 
 `generateConcepts(context)`
-
-# learn
-
-实现 lattice 书中的 "from theory to practice"
 
 # lattice
 
