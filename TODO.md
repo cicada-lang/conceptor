@@ -1,6 +1,6 @@
 # context
 
-`generateConcepts(context)`
+`generateConcepts` test
 
 # lattice
 
