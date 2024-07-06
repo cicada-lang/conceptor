@@ -1,6 +1,5 @@
 # lattice
 
-`lattice/conceptBelow`
 `lattice/conceptAbove`
 
 `LatticeLayout`
