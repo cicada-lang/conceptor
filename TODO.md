@@ -1,6 +1,3 @@
-`format/formatConcept`
-`lattice/generateConcepts` test by `formatConcept`
-
 # lattice
 
 实现 concept 之间的序关系
