@@ -1,7 +1,5 @@
 # lattice
 
-`lattice/conceptAbove`
-
 `LatticeLayout`
 `layoutLattice(context)`
 
