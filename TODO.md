@@ -3,6 +3,8 @@
 `conceptBeneath` -- 为 layout 做准备
 `conceptCover` -- 为 layout 做准备
 
+找出 lattice 中的所有最长 chain -- 为计算 rank 做准备
+
 # lattice layout
 
 `LatticeLayout`
