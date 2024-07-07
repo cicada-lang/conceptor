@@ -1,4 +1,6 @@
-docs/从格到形式概念分析
+回顾《形式概念分析笔记》
+回顾《Restructuring lattice theory》笔记
+完成 docs/notes/从格到形式概念分析.md
 
 # lattice
 
