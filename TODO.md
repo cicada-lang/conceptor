@@ -1,5 +1,10 @@
 # lattice
 
+`conceptBeneath` -- 为 layout 做准备
+`conceptCover` -- 为 layout 做准备
+
+# lattice layout
+
 `LatticeLayout`
 `layoutLattice(context)`
 
