@@ -1,5 +1,3 @@
-extract `generateConceptSet`
-
 `QuotientSet.union`
 `QuotientSet.intersection`
 

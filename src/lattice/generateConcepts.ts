@@ -34,7 +34,7 @@ export function generateAttributeConceptSet(
   return conceptSet
 }
 
-export function generateConcepts(context: Context): Array<Concept> {
+export function generateConceptSet(context: Context): QuotientSet<Concept> {
   const targets = generateEntityConceptSet(context)
   const results = createConceptSet()
 
@@ -65,5 +65,9 @@ export function generateConcepts(context: Context): Array<Concept> {
     }
   }
 
-  return results.representatives
+  return results
+}
+
+export function generateConcepts(context: Context): Array<Concept> {
+  return generateConceptSet(context).representatives
 }
