@@ -1,4 +1,3 @@
-`QuotientSet.union`
 `QuotientSet.intersection`
 
 定义 `generateConceptSetByJoin` 然后 `generateConceptSet` 调用它

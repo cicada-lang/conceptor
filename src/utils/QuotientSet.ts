@@ -39,4 +39,14 @@ export class QuotientSet<T> {
     this.representatives.splice(foundIndex, 1)
     return true
   }
+
+  union(that: QuotientSet<T>): QuotientSet<T> {
+    const newSet = new QuotientSet<T>({ equal: this.equal })
+    for (const x of this.representatives) newSet.add(x)
+    for (const x of that.representatives) newSet.add(x)
+    return newSet
+  }
+
+  // intersection(that: QuotientSet<T>): QuotientSet<T> {
+  // }
 }
