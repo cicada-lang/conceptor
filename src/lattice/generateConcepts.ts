@@ -21,9 +21,18 @@ export function generateEntityConceptSet(
   return conceptSet
 }
 
-// export function generateAttributeConceptSet(context: Context): QuotientSet<Concept> {
-//   //
-// }
+export function generateAttributeConceptSet(
+  context: Context,
+): QuotientSet<Concept> {
+  const conceptSet = createConceptSet()
+
+  for (const attribute of context.attributes) {
+    const attributeConcept = conceptFromEntities(context, [attribute])
+    conceptSet.add(attributeConcept)
+  }
+
+  return conceptSet
+}
 
 export function generateConcepts(context: Context): Array<Concept> {
   const targets = generateEntityConceptSet(context)

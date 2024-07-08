@@ -1,4 +1,3 @@
-extract `generateAttributeConceptSet`
 extract `generateConceptSet`
 
 `QuotientSet.union`
