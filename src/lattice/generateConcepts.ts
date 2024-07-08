@@ -1,5 +1,4 @@
 import {
-  conceptFromAttributes,
   conceptFromEntities,
   conceptJoin,
   createConceptSet,
@@ -36,19 +35,7 @@ export function generateAttributeConceptSet(
 
 export function generateConceptSet(context: Context): QuotientSet<Concept> {
   const targets = generateEntityConceptSet(context)
-  const results = createConceptSet()
-
-  for (const entity of context.entities) {
-    const entityConcept = conceptFromEntities(context, [entity])
-    targets.add(entityConcept)
-    results.add(entityConcept)
-  }
-
-  for (const attribute of context.attributes) {
-    const attributeConcept = conceptFromAttributes(context, [attribute])
-
-    results.add(attributeConcept)
-  }
+  const results = generateAttributeConceptSet(context).union(targets)
 
   while (true) {
     const first = targets.representatives.shift()
