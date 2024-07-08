@@ -6,9 +6,27 @@ import {
   type Concept,
 } from "../concept/index.js"
 import type { Context } from "../context/index.js"
+import type { QuotientSet } from "../utils/QuotientSet.js"
+
+export function generateEntityConceptSet(
+  context: Context,
+): QuotientSet<Concept> {
+  const conceptSet = createConceptSet()
+
+  for (const entity of context.entities) {
+    const entityConcept = conceptFromEntities(context, [entity])
+    conceptSet.add(entityConcept)
+  }
+
+  return conceptSet
+}
+
+// export function generateAttributeConceptSet(context: Context): QuotientSet<Concept> {
+//   //
+// }
 
 export function generateConcepts(context: Context): Array<Concept> {
-  const targets = createConceptSet()
+  const targets = generateEntityConceptSet(context)
   const results = createConceptSet()
 
   for (const entity of context.entities) {
@@ -19,7 +37,7 @@ export function generateConcepts(context: Context): Array<Concept> {
 
   for (const attribute of context.attributes) {
     const attributeConcept = conceptFromAttributes(context, [attribute])
-    targets.add(attributeConcept)
+
     results.add(attributeConcept)
   }
 

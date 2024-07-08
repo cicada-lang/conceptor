@@ -1,3 +1,14 @@
+extract `generateAttributeConceptSet`
+extract `generateConceptSet`
+
+`QuotientSet.union`
+`QuotientSet.intersection`
+
+定义 `generateConceptSetByJoin` 然后 `generateConceptSet` 调用它
+定义 `generateConceptSetByMeet` 然后测试两种计算方式相等
+
+# learn
+
 回顾《Restructuring lattice theory》笔记
 完成 docs/notes/从格到形式概念分析.md
 
