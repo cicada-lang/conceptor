@@ -47,6 +47,9 @@ export class QuotientSet<T> {
     return newSet
   }
 
-  // intersection(that: QuotientSet<T>): QuotientSet<T> {
-  // }
+  intersection(that: QuotientSet<T>): QuotientSet<T> {
+    const newSet = new QuotientSet<T>({ equal: this.equal })
+    for (const x of this.representatives) if (that.has(x)) newSet.add(x)
+    return newSet
+  }
 }

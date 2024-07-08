@@ -1,5 +1,3 @@
-`QuotientSet.intersection`
-
 定义 `generateConceptSetByJoin` 然后 `generateConceptSet` 调用它
 定义 `generateConceptSetByMeet` 然后测试两种计算方式相等
 
