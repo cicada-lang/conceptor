@@ -52,4 +52,10 @@ export class QuotientSet<T> {
     for (const x of this.representatives) if (that.has(x)) newSet.add(x)
     return newSet
   }
+
+  isEqualTo(that: QuotientSet<T>): boolean {
+    if (this.equal !== that.equal) return false
+
+    return this.union(that).size === this.size
+  }
 }

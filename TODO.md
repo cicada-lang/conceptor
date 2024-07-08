@@ -1,5 +1,3 @@
-定义 `generateConceptSetByMeet` 然后测试两种计算方式相等
-
 # learn
 
 回顾《Restructuring lattice theory》笔记
