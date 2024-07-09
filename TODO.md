@@ -1,8 +1,3 @@
-# learn
-
-回顾《Restructuring lattice theory》笔记
-完成 docs/notes/从格到形式概念分析.md
-
 # lattice
 
 `conceptBeneath` -- 为 layout 做准备
