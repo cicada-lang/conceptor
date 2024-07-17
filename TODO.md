@@ -1,5 +1,3 @@
-抽出 `entitiesOf`
-
 修复 `commonAttributes` -- 应该是交集不是并集
 
 `concept-graph/` -- 从 `generateConcepts` 生成有向图
