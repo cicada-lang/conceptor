@@ -1,4 +1,4 @@
-import { conceptJoin, type Concept } from "../concept/index.js"
+import { bottomConcept, conceptJoin, type Concept } from "../concept/index.js"
 import type { Context } from "../context/index.js"
 import type { QuotientSet } from "../utils/QuotientSet.js"
 import { generateAttributeConceptSet } from "./generateAttributeConceptSet.js"
@@ -25,5 +25,5 @@ export function generateConceptSetByJoin(
     }
   }
 
-  return results
+  return results.add(bottomConcept(context))
 }
