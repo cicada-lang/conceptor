@@ -56,6 +56,10 @@ export class QuotientSet<T> {
   isEqualTo(that: QuotientSet<T>): boolean {
     if (this.equal !== that.equal) return false
 
-    return this.union(that).size === this.size
+    const unionSize = this.union(that).size
+
+    if (unionSize !== this.size) return false
+    if (unionSize !== that.size) return false
+    return true
   }
 }

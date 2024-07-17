@@ -1,4 +1,4 @@
-修复 `generateConceptSetByMeet` -- 需要手动加入 `topConcept`
+修复 `generateConceptSetByMeet` -- 不知道为什么生成的比 Join 要少
 
 `concept-graph/` -- 从 `generateConcepts` 生成有向图
 
