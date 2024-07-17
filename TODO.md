@@ -1,9 +1,12 @@
-# lattice
+`concept-graph/` -- 从 `generateConcepts` 生成有向图
 
-`conceptBeneath` -- 为 layout 做准备
-`conceptCover` -- 为 layout 做准备
+- 以 concept 之间的蕴含关系为 有向边
 
 找出 lattice 中的所有最长 chain -- 为计算 rank 做准备
+
+为了找最长的 chain，可能需要考虑一般的（无圈）有向图中的算法。
+
+- https://en.wikipedia.org/wiki/Longest_path_problem
 
 # lattice layout
 
