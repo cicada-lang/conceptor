@@ -1,5 +1,3 @@
-修复 `generateConceptSetByMeet` -- 不知道为什么生成的比 Join 要少
-
 `concept-graph/` -- 从 `generateConcepts` 生成有向图
 
 - 以 concept 之间的蕴含关系为 有向边

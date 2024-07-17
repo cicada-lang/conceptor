@@ -1,5 +1,5 @@
 import {
-  conceptFromEntities,
+  conceptFromAttributes,
   createConceptSet,
   type Concept,
 } from "../concept/index.js"
@@ -12,7 +12,7 @@ export function generateAttributeConceptSet(
   const conceptSet = createConceptSet()
 
   for (const attribute of context.attributes) {
-    const attributeConcept = conceptFromEntities(context, [attribute])
+    const attributeConcept = conceptFromAttributes(context, [attribute])
     conceptSet.add(attributeConcept)
   }
 
