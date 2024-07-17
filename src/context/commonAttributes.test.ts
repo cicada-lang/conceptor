@@ -19,12 +19,6 @@ test("commonAttributes", () => {
 
   assert.deepStrictEqual(
     commonAttributes(context, ["earth", "mars", "jupiter"]),
-    new Set([
-      "size.small",
-      "size.large",
-      "distance-from-sun.near",
-      "distance-from-sun.far",
-      "moon.yes",
-    ]),
+    new Set(["moon.yes"]),
   )
 })

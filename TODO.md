@@ -1,4 +1,4 @@
-修复 `commonAttributes` -- 应该是交集不是并集
+修复 `generateConcepts`
 
 `concept-graph/` -- 从 `generateConcepts` 生成有向图
 
