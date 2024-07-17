@@ -1,4 +1,4 @@
-修复 `generateConcepts`
+修复 `generateConcepts` -- `topConcept` 和 `bottomConcept` 是特殊的
 
 `concept-graph/` -- 从 `generateConcepts` 生成有向图
 
