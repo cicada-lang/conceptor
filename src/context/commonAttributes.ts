@@ -10,17 +10,11 @@ export function commonAttributes(
   context: Context,
   inputEntities: ReadonlySet<Entity> | ReadonlyArray<Entity>,
 ): ReadonlySet<Attribute> {
-  inputEntities = Array.from(inputEntities)
-  if (inputEntities.length === 0) {
-    return context.attributes
-  }
-
-  const [firstEntity, ...restEntities] = inputEntities
-  let resultAttributes = attributesOf(context, firstEntity)
-  for (const entity of restEntities) {
+  let resultAttributes = context.attributes
+  for (const inputEntity of inputEntities) {
     resultAttributes = setIntersection(
       resultAttributes,
-      attributesOf(context, entity),
+      attributesOf(context, inputEntity),
     )
   }
 
