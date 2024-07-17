@@ -1,3 +1,7 @@
+抽出 `entitiesOf`
+
+修复 `commonAttributes` -- 应该是交集不是并集
+
 `concept-graph/` -- 从 `generateConcepts` 生成有向图
 
 - 以 concept 之间的蕴含关系为 有向边
@@ -27,3 +31,8 @@
 
   - 增加与删除 entity 或 attribute；
   - 修改某个 entity 和 attribute 的关系。
+
+# concept exploration
+
+给出一个假定的 attribute 之间的 implication，
+判断它是真的，或者找出反例。
