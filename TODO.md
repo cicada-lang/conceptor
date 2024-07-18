@@ -8,6 +8,9 @@
 
 - https://en.wikipedia.org/wiki/Longest_path_problem
 
+- 注意，我们要对所有点找到最长的 chain，
+  最好能一起找，而不只是一个点一个点的找。
+
 # lattice layout
 
 `LatticeLayout`
