@@ -1,3 +1,7 @@
+练习 order book 中计算 concept lattice 的算法。
+
+- 也许可以以这个算法为基础，来给出 lattice 的 layout。
+
 `concept-graph/` -- 从 `generateConcepts` 生成有向图
 
 - 以 concept 之间的蕴含关系为 有向边
