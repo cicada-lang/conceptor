@@ -1,10 +1,15 @@
+# lattice layout
+
 练习 order book 中计算 concept lattice 的算法。
 
-- 也许可以以这个算法为基础，来给出 lattice 的 layout。
+- 以这个算法为基础，来给出 lattice 的 layout。
 
-`concept-graph/` -- 从 `generateConcepts` 生成有向图
+`concept-graph/` -- 以 `generateConcepts` 的结果为基础，生成有向图
 
-- 以 concept 之间的蕴含关系为 有向边
+- 以 concept 之间的蕴含关系为有向边 -- 方向就是蕴含关系的方向
+- 可能的 API：
+  - `LatticeLayout`
+  - `layoutLattice(context)`
 
 找出 lattice 中的所有最长 chain -- 为计算 rank 做准备
 
@@ -14,15 +19,6 @@
 
 - 注意，我们要对所有点找到最长的 chain，
   最好能一起找，而不只是一个点一个点的找。
-
-# lattice layout
-
-`LatticeLayout`
-`layoutLattice(context)`
-
-# optimize
-
-`Context` -- use double index `entityAttributeIndex` and `attributeEntityIndex`
 
 # editing context
 
