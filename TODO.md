@@ -1,7 +1,3 @@
-[maybe] 实现 `Entity` 与 `Attribute` 在类型上的差别
-
-- `Context` 需要用 `QuotientSet` 而不是 `Set`
-
 # lattice layout
 
 练习 order book 中计算 concept lattice 的算法。
@@ -23,6 +19,13 @@
 
 - 注意，我们要对所有点找到最长的 chain，
   最好能一起找，而不只是一个点一个点的找。
+
+# maybe
+
+[maybe] 实现 `Entity` 与 `Attribute` 在类型上的差别
+
+- 这样可以保证重要的类型安全，但是将大大降低效率
+- `Context` 需要用 `QuotientSet` 而不是 `Set`
 
 # editing context
 
