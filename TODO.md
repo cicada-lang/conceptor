@@ -1,3 +1,7 @@
+[maybe] 实现 `Entity` 与 `Attribute` 在类型上的差别
+
+- `Context` 需要用 `QuotientSet` 而不是 `Set`
+
 # lattice layout
 
 练习 order book 中计算 concept lattice 的算法。
