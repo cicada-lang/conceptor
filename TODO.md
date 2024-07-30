@@ -1,7 +1,3 @@
-用闭包算子可以定义拓扑空间吗？
-
-- https://en.wikipedia.org/wiki/Characterizations_of_the_category_of_topological_spaces
-
 # lattice layout
 
 练习 order book 中计算 concept lattice 的算法。
