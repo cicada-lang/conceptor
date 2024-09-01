@@ -4,7 +4,7 @@ import {
   type Concept,
 } from "../concept/index.js"
 import type { Context } from "../context/index.js"
-import type { QuotientSet } from "../utils/QuotientSet.js"
+import type { QuotientSet } from "../utils/quotient-set/index.js"
 
 export function generateEntityConceptSet(
   context: Context,

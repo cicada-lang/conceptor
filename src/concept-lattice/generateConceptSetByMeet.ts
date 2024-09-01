@@ -1,6 +1,6 @@
 import { conceptMeet, topConcept, type Concept } from "../concept/index.js"
 import type { Context } from "../context/index.js"
-import type { QuotientSet } from "../utils/QuotientSet.js"
+import type { QuotientSet } from "../utils/quotient-set/index.js"
 import { generateAttributeConceptSet } from "./generateAttributeConceptSet.js"
 import { generateEntityConceptSet } from "./generateEntityConceptSet.js"
 

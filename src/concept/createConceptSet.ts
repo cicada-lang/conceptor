@@ -1,4 +1,4 @@
-import { QuotientSet } from "../utils/QuotientSet.js"
+import { QuotientSet } from "../utils/quotient-set/index.js"
 import type { Concept } from "./Concept.js"
 import { conceptEqual } from "./conceptEqual.js"
 
