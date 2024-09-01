@@ -1,4 +1,4 @@
-import { setIntersection } from "../utils/Set.js"
+import { setIntersection } from "../utils/set/index.js"
 import { assertSameContext } from "./assertSameContext.js"
 import type { Concept } from "./Concept.js"
 import { conceptFromAttributes } from "./conceptFromAttributes.js"

@@ -1,4 +1,4 @@
-import { setIntersection } from "../utils/Set.js"
+import { setIntersection } from "../utils/set/index.js"
 import {
   attributesOf,
   type Attribute,

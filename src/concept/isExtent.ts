@@ -1,5 +1,5 @@
 import type { Context, Entity } from "../context/index.js"
-import { setEqual } from "../utils/Set.js"
+import { setEqual } from "../utils/set/index.js"
 import { closureEntities } from "./index.js"
 
 export function isExtent(

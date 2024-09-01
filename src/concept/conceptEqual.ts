@@ -1,4 +1,4 @@
-import { setEqual } from "../utils/Set.js"
+import { setEqual } from "../utils/set/index.js"
 import type { Concept } from "./Concept.js"
 
 export function conceptEqual(x: Concept, y: Concept): boolean {

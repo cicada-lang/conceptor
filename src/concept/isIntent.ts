@@ -1,5 +1,5 @@
 import type { Attribute, Context } from "../context/index.js"
-import { setEqual } from "../utils/Set.js"
+import { setEqual } from "../utils/set/index.js"
 import { closureAttributes } from "./index.js"
 
 export function isIntent(
